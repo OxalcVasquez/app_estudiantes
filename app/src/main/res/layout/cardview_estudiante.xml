@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    card_view:cardElevation="3dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="5dp"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:id="@+id/img_estudiante"
+            android:src="@drawable/profile"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellidos y nombres"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/txt_nombres" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo :"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:id="@+id/txt_sexo_fecha" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dirección"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:id="@+id/txt_direccion" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teléfono"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:id="@+id/txt_telefono" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo estudiante"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:id="@+id/txt_tipo_estudiante" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Membresia"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:id="@+id/txt_membresia" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Promedio semestral"
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:id="@+id/txt_promedio" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
